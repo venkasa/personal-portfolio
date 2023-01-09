@@ -26,3 +26,22 @@
   font-size: 60px;
   color: purple;
 }
+
+.project .skill-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #b38dff;
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+}
+.project .skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.project .skill-icon {
+  margin-right: 10px;
+}

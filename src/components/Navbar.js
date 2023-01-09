@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 import ReorderIcon from "@material-ui/icons/Reorder";
 
@@ -24,15 +24,15 @@ function Navbar() {
         </button>
       </div>
       <div className="links">
-        <Link className="link" to="/">
+        <NavLink className="link" activeClassName="active" to="/">
           Home
-        </Link>
-        <Link className="link" to="/projects">
+        </NavLink>
+        <NavLink className="link" activeClassName="active" to="/projects">
           Projects
-        </Link>
-        <Link className="link" to="/experience">
+        </NavLink>
+        <NavLink className="link" activeClassName="active" to="/experience">
           Experience
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
