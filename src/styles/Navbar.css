@@ -2,6 +2,7 @@
   width: 100%;
   height: 100px;
   background: #9065e5;
+  z-index: 10;
 }
 
 .links {
@@ -54,27 +55,27 @@
 }
 
 #open {
-  height: 100vh;
+  height: 100%;
 }
 
 #open .links {
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 100px;
 }
 
 #open a {
   width: 100%;
   text-align: center;
+  height: 100px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1366px) {
   .navbar a {
-    width: 70px;
+    width: 100px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .toggleButton {
     display: flex;
   }
@@ -83,7 +84,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
   .toggleButton {
     display: none;
   }
@@ -96,7 +97,30 @@
     height: 100px;
   }
 
+  #open a {
+    height: 100px;
+  }
+
   #open .links {
     flex-direction: row;
+    margin-top: 0;
   }
+}
+
+.download-resume {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+  background: #ffc44d;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+.download-resume a {
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.download-resume .icon {
+  margin-right: 10px;
 }

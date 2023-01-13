@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { ProjectList, skills } from "../helpers/ProjectList";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript, SiRedux, SiMaterialui } from "react-icons/si";
@@ -14,7 +13,10 @@ function ProjectDisplay() {
   return (
     <div className="project">
       <h1> {project.name}</h1>
-      <img src={project.image} alt="" />
+      <a href={project.link} target="_blank" rel="noreferrer">
+        <img src={project.image} alt=""></img>
+        <div className="visit">Visit</div>
+      </a>
       <p>
         <b>Tech Stack</b>
         <h5 className="skill-list">
